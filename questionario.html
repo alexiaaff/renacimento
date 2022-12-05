@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="css/quest.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1> Renascimento ♡</h1>
+        </div>
+        <button onclick="abrirMenu()">&#9776;</button>
+        <ul id="botoesMenu">
+            <a href="index.html">
+                <li>
+                    <p>Home</p>
+                </li>
+            </a>
+            <a href="tabela.html">
+                <li>
+                    <p>Minha Avaliaçaõ sobre </p>
+                </li>
+            </a>
+            <a href="questionario.html">
+                <li>
+                    <p>Perguntas sobre</p>
+                </li>
+            </a>
+            
+            <a href="cur.html">
+                <li>
+                    <p>Um pouco a mais</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
+    <script>
+        const arrayHeight = document.getElementsByClassName('height-nav');
+        const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
+
+        for (let navHeightObj of arrayHeight)
+            navHeightObj.style.height = navHeight + 'px';
+
+        function abrirMenu() {
+            const botoesMenu = document.getElementById('botoesMenu');
+
+            botoesMenu.className = botoesMenu.className.includes('responsivo') ? '' : 'responsivo'
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="container">
+<h3>Perguntas </h3>
+<form action="/action_page.php">
+
+<label for="fnamsse">Você costuma apreciar qualquer forma de arte?</label>
+<input type="text" id="fname" name="firstname" placeholder="Sua resposta..." required>
+<label for="lname">Acha que a arte é uma forma de emancipação social? Ou integração social?</label>
+<input type="text" id="lname" name="lastname" placeholder="Sua resposta..." required>
+<label for="fnamsse">Já se sentiu emancipado ou integrado pela arte? Seja ela que forma for</label>
+<input type="text" id="fname" name="firstname" placeholder="Sua resposta..." required>
+<label for="fnamsse">Você pratica arte?</label>
+<input type="text" id="fname" name="firstname" placeholder="Sua resposta..." required>
+<label for="art">Se suas ultimas respotas foram sim, selecione sua forma de expressao de arte:</label>
+<select id="art" name="art">
+<option value="barroco">Barroco</option>
+<option value="romantista">Romantista</option>
+<option value="sacra">Sacra</option>
+<option value="renascimento">Renascimento</option>
+</select>
+<label for="country">Selecione seu periodo de arte favorito:</label>
+<select id="country" name="country">
+<option value="desenhos">Desenhos</option>
+<option value="pinturas">Pinturas</option>
+<option value="musica">Musica/ composição</option>
+<option value="poemas">Poemas</option>
+<option value="Escritas">Escritas</option>
+<option value="outro">Outro</option>
+</select>
+<fieldset>
+<legend>Se deseja mais contato ou interação com pessoas do mesmo interesse, favor preencher os campos Abaixo </legend>
+<div class='telefone'>
+<label for="celular">Celular</label>
+<input type="text" ninputame="celular"><br>
+</div>
+<div class='telefone'>
+<label for="email">Email</label>
+<input type="text" name="residencial"><br>
+</div>
+</fieldset>
+<br>
+<div class="rodape">
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpar">
+</div>
+</form>
+</div>
+</body>
+</html>

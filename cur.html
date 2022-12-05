@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link href="css/css.css" type="text-css" rel="stylesheet" />
+
+    <meta charset="utf-8">
+    <meta name="alexia reik">
+    <title> Renascimento ♡</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Menu Responsivo</h1>
+        </div>
+        <button onclick="abrirMenu()">&#9776;</button>
+        <ul id="botoesMenu">
+            <a href="index.html">
+                <li>
+                    <p>Home</p>
+                </li>
+            </a>
+            <a href="tabela.html">
+                <li>
+                    <p>Minha Avaliaçaõ sobre </p>
+                </li>
+            </a>
+            <a href="questionario.html">
+                <li>
+                    <p>Perguntas sobre</p>
+                </li>
+            </a>
+            <a href="#comprados">
+                <li>
+                    <p>Comprados</p>
+                </li>
+            </a>
+            <a href="cur.html">
+                <li>
+                    <p>Um pouco a mais</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
+    <script>
+        const arrayHeight = document.getElementsByClassName('height-nav');
+        const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
+
+        for (let navHeightObj of arrayHeight)
+            navHeightObj.style.height = navHeight + 'px';
+
+        function abrirMenu() {
+            const botoesMenu = document.getElementById('botoesMenu');
+
+            botoesMenu.className = botoesMenu.className.includes('responsivo') ? '' : 'responsivo'
+        }
+    </script>
+</body>

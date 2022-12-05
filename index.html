@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="css/css.css">
+
+    <meta charset="utf-8">
+    <meta name="alexia reik">
+    <title> Renascimento ♡</title>
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1> Renascimento ♡</h1>
+        </div>
+        <button onclick="abrirMenu()">&#9776;</button>
+        <ul id="botoesMenu">
+            <a href="index.html">
+                <li>
+                    <p>Home</p>
+                </li>
+            </a>
+            <a href="tabela.html">
+                <li>
+                    <p>Minha Avaliaçaõ sobre </p>
+                </li>
+            </a>
+            <a href="questionario.html">
+                <li>
+                    <p>Perguntas sobre</p>
+                </li>
+            </a>
+
+
+            <a href="cur.html">
+                <li>
+                    <p>Um pouco a mais</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+
+    <div class="main">
+
+
+
+        <div id="p0">
+
+
+            <div class="height-nav"></div>
+            <div style="background-color: darksalmon">
+                <h1> Renascimento: contexto </h1>
+            </div>
+            <p> O movimento artístico que chamamos “Renascimento” nasceu na Itália, em Florença, nas
+                primeiras décadas do século XV. Nos finais de 1400, tinha-se espalhado por toda a Itália. Na
+                primeira
+                metade
+                do
+                século seguinte,
+                quando Roma se sobrepunha a Florença como principal centro artístico, tinha alcançado os resultados
+                mais
+                clássicos.
+                <br>
+                Nessa mesma época, começou a difundir-se pelo resto da Europa, iniciando uma completa revolução
+                artística,
+                cujos
+                efeitos perdurariam, com constantes acontecimentos, durante séculos, até quase o limiar da nossa
+                época.
+                <br>
+                Este movimento, embora bastante complexo e variado internamente, estabeleceu princípios, métodos e,
+                sobretudo,
+                formas originais e típicas, mas comuns.
+                <br>
+                Tais formas provem de duas principais fontes: a reutilização, após um intervalo de quase um milênio,
+                das
+                formas
+                características da arte clássica – arte grega e arte romana. E a aplicação de uma nova descoberta
+                técnica: a
+                perspectiva, conjunto de regras matemáticas e de desenho que permitem reproduzir sobre uma folha de
+                papel ou
+                sobre qualquer superfície plana, o aspecto real dos objetos.
+                <br>
+                Além de reviver a antiga cultura greco-romana, ocorreram nesse período muitos progressos e
+                incontáveis
+                realizações no campo das artes, da literatura e das ciências, que superaram a herança clássica. O
+                ideal
+                do
+                humanismo foi, sem dúvida, o motel desse progresso e tornou-se o próprio espírito do Renascimento.
+                Trata-se
+                de
+                uma volta deliberada, que propunha a ressurreição consciente (do renascimento) do passado,
+                considerado
+                agora
+                como fonte de inspiração e modelo de civilização. Num sentido amplo, esse ideal pode ser entendido
+                como
+                a
+                valorização do homem (Humanismo) e da natureza, em oposição
+                ao divino e ao sobrenatural, conceitos que haviam impregnado a cultura da Idade Média.
+            </p>
+            <div style="background-color: rgb(171, 224, 228)">
+                <h3>Pricipais artistas:</h3>
+            </div>
+        </div>
+
+        <script>
+            const arrayHeight = document.getElementsByClassName('height-nav');
+            const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
+
+            for (let navHeightObj of arrayHeight)
+                navHeightObj.style.height = navHeight + 'px';
+
+            function abrirMenu() {
+                const botoesMenu = document.getElementById('botoesMenu');
+
+                botoesMenu.className = botoesMenu.className.includes('responsivo') ? '' : 'responsivo'
+            }
+        </script>
+        <div id="leo">
+            <li>Leonardo da Vinci</li>
+            <img src="imagens/leonardo.png" height="100" width="100">
+            <p>"Leonardo da Vinci é lembrado por ser um dos maiores gênios da história da humanidade. As suas
+                contribuições
+                ultrapassaram o ramo das artes e suas obras, como A Última Ceia e Mona Lisa, são algumas das
+                pinturas
+                mais
+                famosas e reproduzidas de todos os tempos."
+
+        </div>
+        <div id="miche">
+            <li>Michelangelo</li>
+
+            <img src="imagens/micheal.png" height="100" width="100">
+            <p>Pintor, escultor, arquiteto e poeta. Esse foi Michelangelo di Lodovico Buonarroti, ou
+                simplesmente
+                Michelangelo. Grande artisita Várias delas são consideradas patrimônios culturais da humanidade,
+                com um
+                valor inestimável. Abaixo, listamos 3 das mais famosas, além da abóbada da Capela Sistina citada
+                anteriormente.</p>
+
+        </div>
+
+        <div id="p3">
+            <li>Donatello</li>
+            <img src="imagens/tello.png" height="100" width="100">
+            <p>Nascido Donato di Niccoló di Betto Bardi, mais conhecido por seu nome artístico Donatello,foi
+                considerado
+                um
+                grande inovador das técnicas artísticas (da qual e destaca o e para a composição de suas
+                estruturas,
+                utilizava diversos materiais, como o mármore, bronze, madeira.</p>
+        </div>
+
+        <div id="p4">
+            <li>Sandro Botticelli</li>
+            <img src="imagens/dona.png" height="100" width="100">
+            <p>Alessandro di Mariano Vanni Filipepi. Caçula de cinco filhos, foi apelidado por um irmão mais
+                velho de
+                Sandro
+                Botticelli, que significa "pequeno barril de vinho".O estilo de Lippi, um dos mais importantes
+                pintores
+                da
+                época, é evidenciado na maior parte da obra de Botticelli. </p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

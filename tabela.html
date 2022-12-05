@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="css/tab.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1> Renascimento ♡</h1>
+        </div>
+        <button onclick="abrirMenu()">&#9776;</button>
+        <ul id="botoesMenu">
+            <a href="index.html">
+                <li>
+                    <p>Home</p>
+                </li>
+            </a>
+            <a href="tabela.html">
+                <li>
+                    <p>Minha Avaliaçaõ sobre </p>
+                </li>
+            </a>
+            <a href="questionario.html">
+                <li>
+                    <p>Perguntas sobre</p>
+                </li>
+            </a>
+           
+            <a href="cur.html">
+                <li>
+                    <p>Um pouco a mais</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
+    <script>
+        const arrayHeight = document.getElementsByClassName('height-nav');
+        const navHeight = document.getElementsByTagName('nav')[0].clientHeight;
+
+        for (let navHeightObj of arrayHeight)
+            navHeightObj.style.height = navHeight + 'px';
+
+        function abrirMenu() {
+            const botoesMenu = document.getElementById('botoesMenu');
+
+            botoesMenu.className = botoesMenu.className.includes('responsivo') ? '' : 'responsivo'
+        }
+    </script>
+    
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <body>
+        <table id="customers">
+            <thead>
+                <tr>
+                    <th>Pintor</th>
+                    <th>Obra Favorita</th>
+                    <th>Minha Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Michealangelo</td>
+                    <td>“Juízo Final”</td>
+                    <td> 9/10 </td>
+                </tr>
+                <tr>
+                    <td>Leonardo</td>
+                    <td>"A Dama com Arminho"</td>
+                    <td>9,5/10</td>
+                </tr>
+                <tr>
+                    <td>Donatello</td>
+                    <td>"profetas"</td>
+                    <td> 8/10</td>
+                </tr>
+                <tr>
+                    <td>Sandro Botticelli</td>
+                    <td>“O Nascimento da Vênus”</td>
+                    <td>9/10</td>
+                </tr>
+                <tr>
+                    <td>Jan van Eyck</td>
+                    <td>“A Vírgem da Fonte ”</td>
+                    <td> 7/10</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+</html>
